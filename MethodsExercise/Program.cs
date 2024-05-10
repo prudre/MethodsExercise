@@ -2,9 +2,58 @@
 {
     public class Program
     {
+
+        public int Sum(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        public int Subtract(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        public int Multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        public int Divide(int num1, int num2)
+        {
+            return num1 / num2;
+        }
+
+        public int Modulus(int num1, int num2)
+        {
+            return num1 % num2;
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            var amountOfPeople = Sum(15, 13);
+            var amountDeclined = Subtract(13, 2);
+            var amountArrived = Multiply(13, 2);
+            var amountMissing = Divide(13, 2);
+            var amountRemaining = Modulus(13, 2);
+
+
+        Console.WriteLine("Hey, what's your name?");
+            var userName = Console.ReadLine();
+
+            Console.WriteLine($"Cool! {userName}, what's your favorite color then?");
+            var color = Console.ReadLine();
+
+            Console.WriteLine("That's mine too! What's your favorite animal?");
+            var animal = Console.ReadLine();
+
+            Console.WriteLine("They are the cutest! Lastly, what's your favorite band?");
+            var band = Console.ReadLine();
+
+            Console.WriteLine($"Thank you for registering {userName}. Can you imagined {animal} in {color} playing your favorite song from {band}");
+
+
+            // Exercise 3 Delcare 5 methods
         }
     }
 }
