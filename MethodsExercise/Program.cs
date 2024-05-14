@@ -31,11 +31,11 @@
         static void Main(string[] args)
         {
 
-            var amountOfPeople = Sum(15, 13);
-            var amountDeclined = Subtract(13, 2);
-            var amountArrived = Multiply(13, 2);
-            var amountMissing = Divide(13, 2);
-            var amountRemaining = Modulus(13, 2);
+            var amountOfPeople = 15 + 13;
+            var amountDeclined = 13 - 2;
+            var amountArrived = 13 * 3 ;
+            var amountMissing = 13 / 2;
+            var amountRemaining = 13 % 2;
 
 
         Console.WriteLine("Hey, what's your name?");
