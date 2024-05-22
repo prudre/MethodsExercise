@@ -3,27 +3,27 @@
     public class Program
     {
 
-        public int Sum(int num1, int num2)
+        public static int Sum(int num1, int num2)
         {
             return num1 + num2;
         }
 
-        public int Subtract(int num1, int num2)
+        public static int Subtract(int num1, int num2)
         {
             return num1 - num2;
         }
 
-        public int Multiply(int num1, int num2)
+        public static int Multiply(int num1, int num2)
         {
             return num1 * num2;
         }
 
-        public int Divide(int num1, int num2)
+        public static int Divide(int num1, int num2)
         {
             return num1 / num2;
         }
 
-        public int Modulus(int num1, int num2)
+        public static int Modulus(int num1, int num2)
         {
             return num1 % num2;
         }
@@ -31,8 +31,8 @@
         static void Main(string[] args)
         {
 
-            var amountOfPeople = 15 + 13;
-            var amountDeclined = 13 - 2;
+            var amountOfPeople = Sum(15, 12);
+            var amountDeclined = Subtract(13, 2);
             var amountArrived = 13 * 3 ;
             var amountMissing = 13 / 2;
             var amountRemaining = 13 % 2;
@@ -52,8 +52,11 @@
 
             Console.WriteLine($"Thank you for registering {userName}. Can you imagined {animal} in {color} playing your favorite song from {band}");
 
-
-            // Exercise 3 Delcare 5 methods
+            Console.WriteLine($"What is the Amount of Poeple {amountOfPeople}?");
+            Console.WriteLine($"How many people declined {amountDeclined}");
+            Console.WriteLine($"How many arrived {amountArrived}");
+            Console.WriteLine($"How many did not come {amountMissing}");
+            Console.WriteLine($"Who els remaining {amountRemaining}");
         }
     }
 }
